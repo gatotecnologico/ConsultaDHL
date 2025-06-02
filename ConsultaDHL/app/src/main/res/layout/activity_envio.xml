@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seguimiento de Envío"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#DC2626" />
+
+            <ImageView
+                android:id="@+id/iconPackage"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/ic_package"
+                android:contentDescription="Ícono de paquete" />
+        </LinearLayout>
+
+        <!-- Campo de entrada para ID de envío -->
+        <EditText
+            android:id="@+id/editTextIdEnvio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el ID de envío"
+            android:inputType="text"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:layout_marginTop="6dp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para consultar -->
+        <Button
+            android:id="@+id/buttonConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B91C1C"
+            android:text="Consultar Envío" />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="24dp" />
+
+        <!-- Estado del envío -->
+        <TextView
+            android:id="@+id/textEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado: -"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Fecha estimada -->
+        <TextView
+            android:id="@+id/textFechaEstimada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha estimada de llegada: -"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Ruta del avión -->
+        <TextView
+            android:id="@+id/textRutaAvion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viajando de: -"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
